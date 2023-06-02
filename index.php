@@ -202,7 +202,8 @@
                         echo '<div class="alert alert-danger" role="alert">Bandara asal dan bandara tujuan tidak boleh sama.</div>';
                     } else {
                         tambahData($maskapai, $bandaraAsal, $bandaraTujuan, $tarifDasar);
-                        // Redirect untuk mencegah penambahan data ganda saat meng-refresh halaman
+
+                        // Redirect untuk mencegah penambahan data ganda saat me-refresh halaman
                         header('Location: ' . $_SERVER['PHP_SELF']);
                         exit();
                     }
